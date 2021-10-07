@@ -1,0 +1,23 @@
+<section class="joinnow">
+  <h1>Contact Us</h1>
+    <div class="login col-lg-4 m-auto shadow-lg">
+        <form [formGroup]="FormData" (ngSubmit)="sendMessage()">
+          <div class="form-group">
+            <label for="exampleInputFullName">Full Name</label>
+            <input type="text" class="form-control" name="Fullname" placeholder="Full Name" formControlName="Fullname">
+          </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" name="Email" aria-describedby="emailHelp" placeholder="Enter email"formControlName="Email">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputMessage">Message</label>
+              <textarea class="form-control" formControlName="Comment" name="Comment">
+              </textarea>
+            </div>
+            <button [disabled]="!FormData.valid" type="submit" class="btn btn-primary col-lg-12" style="background-color:#addaad; border-color: green;">Submit</button>
+          </form>
+
+    </div>
+</section>

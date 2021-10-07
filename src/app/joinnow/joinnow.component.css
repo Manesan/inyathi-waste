@@ -1,0 +1,31 @@
+.joinnow
+{
+    /* background-color: #eff6ff; */
+    background-image: url('../../assets/daniel-oberg-sEApBUS4fIk-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 140px 100px;
+}
+
+
+.joinnow h1 
+{
+    text-align: center;
+    color: green;
+    font-size: 4rem;
+  
+}
+.login
+{
+    background-color: #ffffff;
+    padding: 20px 30px;
+}
+
+@media screen and (max-width:600px)
+{
+
+    .joinnow
+{
+    padding: 140px 30px;
+}
+}
